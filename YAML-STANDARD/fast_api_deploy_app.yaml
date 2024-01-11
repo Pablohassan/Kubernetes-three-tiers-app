@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-app-deploy
+  labels:
+    app: fastapi-app-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fastapi-app-deploy
+  strategy:
+    type: RollingUpdate 
+  template:
+    metadata:
+      labels:
+        app: fastapi-app-deploy
+    spec:
+      containers:
+      - name: fast-api-exam-app
+        image: pablohassan/fast_api_exam_app:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            cpu: "100m"
