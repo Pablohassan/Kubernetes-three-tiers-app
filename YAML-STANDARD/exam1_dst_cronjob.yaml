@@ -1,0 +1,50 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: postgres-backup
+spec:
+  schedule: "*/6 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: backup-service-account
+          containers:
+          - name: backup
+            image: postgres:12.0-alpine
+            command: ["/bin/bash", "-c"]
+            args:
+              - |
+                TIMESTAMP=$(date +%F_%T)
+                DB_NAME="storedb"
+                DB_USER="admin"
+                DB_PASSWORD=$(cat /var/secrets/postgres-password)
+                LOG_FILE="/mnt/data/backup/backup_log.txt"
+
+                echo "Début de la sauvegarde : $TIMESTAMP" >> $LOG_FILE
+                PGPASSWORD=$DB_PASSWORD pg_dump -U $DB_USER -h postgres-service $DB_NAME > /mnt/data/backup/postgres_backup.sql
+
+                if [ $? -eq 0 ]; then
+                    echo "Sauvegarde réussie à : $TIMESTAMP" >> $LOG_FILE
+                else
+                    echo "Échec de la sauvegarde à : $TIMESTAMP" >> $LOG_FILE
+                fi
+            volumeMounts:
+            - name: backup-script
+              mountPath: /scripts
+            - name: backup-volume
+              mountPath: /mnt/data/backup
+            - name: postgres-secret
+              mountPath: /var/secrets
+          restartPolicy: OnFailure
+          volumes:
+          - name: backup-script
+            configMap:
+              name: backup-script-exam1
+          - name: backup-volume
+            hostPath:
+              path: /home/ubuntu/backup/exam1-dst
+          - name: postgres-secret
+            secret:
+              secretName: postgres-secret
+
