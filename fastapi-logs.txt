@@ -1,0 +1,9 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     10.42.0.80:51520 - "GET /.well-known/acme-challenge/RIiAVNCmX6zIDpsUQsSfky73AeLHsa9duwzt-xPb22g HTTP/1.1" 404 Not Found
+INFO:     10.42.0.80:52430 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     10.42.0.80:35942 - "GET / HTTP/1.1" 200 OK
+INFO:     10.42.0.80:56004 - "GET / HTTP/1.1" 200 OK
+INFO:     10.42.0.80:42384 - "GET / HTTP/1.1" 200 OK
