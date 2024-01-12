@@ -1,0 +1,589 @@
+---------------------------------
+ 2024-01-12 19:46:01: Backup started at Fri Jan 12 19:46:01 UTC 2024
+ 2024-01-12 19:46:01: Saving etcd snapshot...
+time="2024-01-12T19:46:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705088762"
+{"level":"info","ts":"2024-01-12T19:46:01.824001Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705088762.part"}
+{"level":"info","ts":"2024-01-12T19:46:01.827042Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:46:01.827761Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:46:01.938925Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:46:01.971097Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:46:01.971236Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705088762"}
+time="2024-01-12T19:46:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:46:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:46:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:46:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:46:02: etcd snapshot saved successfully.
+2024-01-12 19:46:02: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+2024-01-12 19:46:02: Backup synced successfully to remote server.
+2024-01-12 19:46:02: Backup completed at Fri Jan 12 19:46:02 UTC 2024
+---------------------------------
+ 2024-01-12 19:48:01: Backup started at Fri Jan 12 19:48:01 UTC 2024
+ 2024-01-12 19:48:01: Saving etcd snapshot...
+time="2024-01-12T19:48:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705088881"
+{"level":"info","ts":"2024-01-12T19:48:01.412051Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705088881.part"}
+{"level":"info","ts":"2024-01-12T19:48:01.415283Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:48:01.415377Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:48:01.701543Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:48:01.730364Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:48:01.730593Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705088881"}
+time="2024-01-12T19:48:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086121"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086241"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086362"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086482"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086602"
+time="2024-01-12T19:48:01Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086722"
+time="2024-01-12T19:48:02Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086842"
+time="2024-01-12T19:48:02Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705086962"
+time="2024-01-12T19:48:02Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087082"
+time="2024-01-12T19:48:02Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087201"
+time="2024-01-12T19:48:02Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087322"
+time="2024-01-12T19:48:03Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087443"
+time="2024-01-12T19:48:03Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087562"
+time="2024-01-12T19:48:03Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087681"
+time="2024-01-12T19:48:03Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087802"
+time="2024-01-12T19:48:03Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705087922"
+time="2024-01-12T19:48:04Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088041"
+time="2024-01-12T19:48:04Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088282"
+time="2024-01-12T19:48:04Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088402"
+time="2024-01-12T19:48:04Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088522"
+time="2024-01-12T19:48:04Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088625"
+time="2024-01-12T19:48:05Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088641"
+time="2024-01-12T19:48:05Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088762"
+time="2024-01-12T19:48:05Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T19:48:05Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:48:06Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T19:48:06Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:48:06: etcd snapshot saved successfully.
+2024-01-12 19:48:06: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(235) [sender=3.1.3]
+2024-01-12 19:48:07: Backup synced successfully to remote server.
+2024-01-12 19:48:07: Backup completed at Fri Jan 12 19:48:07 UTC 2024
+---------------------------------
+ 2024-01-12 19:50:01: Backup started at Fri Jan 12 19:50:01 UTC 2024
+ 2024-01-12 19:50:01: Saving etcd snapshot...
+time="2024-01-12T19:50:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089001"
+{"level":"info","ts":"2024-01-12T19:50:01.261137Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089001.part"}
+{"level":"info","ts":"2024-01-12T19:50:01.264508Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:50:01.264582Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:50:01.406135Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:50:01.437972Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:50:01.438068Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089001"}
+time="2024-01-12T19:50:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:50:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:50:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:50:01Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:50:01: etcd snapshot saved successfully.
+2024-01-12 19:50:01: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+2024-01-12 19:50:01: Backup synced successfully to remote server.
+2024-01-12 19:50:01: Backup completed at Fri Jan 12 19:50:01 UTC 2024
+---------------------------------
+ 2024-01-12 19:52:01: Backup started at Fri Jan 12 19:52:01 UTC 2024
+ 2024-01-12 19:52:01: Saving etcd snapshot...
+time="2024-01-12T19:52:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089122"
+{"level":"info","ts":"2024-01-12T19:52:01.850166Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089122.part"}
+{"level":"info","ts":"2024-01-12T19:52:01.858148Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:52:01.858244Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:52:01.994176Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:52:02.021984Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:52:02.022103Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089122"}
+time="2024-01-12T19:52:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:52:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:52:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:52:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:52:02: etcd snapshot saved successfully.
+2024-01-12 19:52:02: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+2024-01-12 19:52:02: Backup synced successfully to remote server.
+2024-01-12 19:52:02: Backup completed at Fri Jan 12 19:52:02 UTC 2024
+---------------------------------
+ 2024-01-12 19:54:01: Backup started at Fri Jan 12 19:54:01 UTC 2024
+ 2024-01-12 19:54:01: Saving etcd snapshot...
+time="2024-01-12T19:54:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089242"
+{"level":"info","ts":"2024-01-12T19:54:01.577178Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089242.part"}
+{"level":"info","ts":"2024-01-12T19:54:01.590775Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:54:01.590925Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:54:01.980006Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:54:02.007384Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:54:02.007561Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089242"}
+time="2024-01-12T19:54:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:54:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T19:54:02Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T19:54:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:54:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:54:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T19:54:02Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T19:54:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:54:02: etcd snapshot saved successfully.
+2024-01-12 19:54:02: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+2024-01-12 19:54:02: Backup synced successfully to remote server.
+2024-01-12 19:54:02: Backup completed at Fri Jan 12 19:54:02 UTC 2024
+---------------------------------
+ 2024-01-12 19:56:01: Backup started at Fri Jan 12 19:56:01 UTC 2024
+ 2024-01-12 19:56:01: Saving etcd snapshot...
+time="2024-01-12T19:56:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089362"
+{"level":"info","ts":"2024-01-12T19:56:01.983453Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089362.part"}
+{"level":"info","ts":"2024-01-12T19:56:01.989372Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:56:01.989452Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:56:02.10454Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:56:02.133708Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:56:02.13381Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089362"}
+time="2024-01-12T19:56:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:56:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:56:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:56:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:56:02: etcd snapshot saved successfully.
+2024-01-12 19:56:02: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+ 2024-01-12 19:56:02: Error occurred during rsync. Check the logs above.
+---------------------------------
+ 2024-01-12 19:58:01: Backup started at Fri Jan 12 19:58:01 UTC 2024
+ 2024-01-12 19:58:01: Saving etcd snapshot...
+time="2024-01-12T19:58:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089482"
+{"level":"info","ts":"2024-01-12T19:58:01.509304Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089482.part"}
+{"level":"info","ts":"2024-01-12T19:58:01.513582Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T19:58:01.513668Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T19:58:01.6406Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T19:58:01.668634Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T19:58:01.668738Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089482"}
+time="2024-01-12T19:58:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T19:58:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:58:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T19:58:01Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 19:58:01: etcd snapshot saved successfully.
+2024-01-12 19:58:01: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+ 2024-01-12 19:58:01: Error occurred during rsync. Check the logs above.
+---------------------------------
+ 2024-01-12 20:00:01: Backup started at Fri Jan 12 20:00:01 UTC 2024
+ 2024-01-12 20:00:01: Saving etcd snapshot...
+time="2024-01-12T20:00:02Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089602"
+{"level":"info","ts":"2024-01-12T20:00:02.27824Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089602.part"}
+{"level":"info","ts":"2024-01-12T20:00:02.287024Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:00:02.287155Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:00:02.504632Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:00:02.523966Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:00:02.524074Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089602"}
+time="2024-01-12T20:00:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:00:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:00:02Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:00:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:00:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:00:02Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:00:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:00:03Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:00:03: etcd snapshot saved successfully.
+2024-01-12 20:00:03: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+ 2024-01-12 20:00:03: Error occurred during rsync. Check the logs above.
+---------------------------------
+ 2024-01-12 20:02:01: Backup started at Fri Jan 12 20:02:01 UTC 2024
+ 2024-01-12 20:02:01: Saving etcd snapshot...
+time="2024-01-12T20:02:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089721"
+{"level":"info","ts":"2024-01-12T20:02:01.480329Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089721.part"}
+{"level":"info","ts":"2024-01-12T20:02:01.483221Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:02:01.483269Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:02:01.607841Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:02:01.633704Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:02:01.633816Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089721"}
+time="2024-01-12T20:02:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:02:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:02:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:02:01Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:02:01: etcd snapshot saved successfully.
+2024-01-12 20:02:01: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+ 2024-01-12 20:02:01: Error occurred during rsync. Check the logs above.
+---------------------------------
+ 2024-01-12 20:04:01: Backup started at Fri Jan 12 20:04:01 UTC 2024
+ 2024-01-12 20:04:01: Saving etcd snapshot...
+time="2024-01-12T20:04:02Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089842"
+{"level":"info","ts":"2024-01-12T20:04:02.053579Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089842.part"}
+{"level":"info","ts":"2024-01-12T20:04:02.056944Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:04:02.057108Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:04:02.20551Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:04:02.233951Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:04:02.234556Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089842"}
+time="2024-01-12T20:04:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:04:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:04:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:04:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:04:02: etcd snapshot saved successfully.
+2024-01-12 20:04:02: Syncing backup to remote server...
+Permission denied, please try again.
+Permission denied, please try again.
+vagrant@127.0.0.1: Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+ 2024-01-12 20:04:02: Error occurred during rsync. Check the logs above.
+---------------------------------
+ 2024-01-12 20:06:01: Backup started at Fri Jan 12 20:06:01 UTC 2024
+ 2024-01-12 20:06:01: Saving etcd snapshot...
+time="2024-01-12T20:06:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089962"
+{"level":"info","ts":"2024-01-12T20:06:01.836988Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089962.part"}
+{"level":"info","ts":"2024-01-12T20:06:01.838574Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:06:01.838616Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:06:02.065307Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:06:02.096099Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:06:02.096193Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705089962"}
+time="2024-01-12T20:06:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:06:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:06:02Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:06:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:06:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:06:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:06:02Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:06:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:06:02: etcd snapshot saved successfully.
+2024-01-12 20:06:02: Syncing backup to remote server...
+2024-01-12 20:06:05: Backup synced successfully to remote server.
+2024-01-12 20:06:05: Backup completed at Fri Jan 12 20:06:05 UTC 2024
+---------------------------------
+ 2024-01-12 20:08:01: Backup started at Fri Jan 12 20:08:01 UTC 2024
+ 2024-01-12 20:08:01: Saving etcd snapshot...
+time="2024-01-12T20:08:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090082"
+{"level":"info","ts":"2024-01-12T20:08:01.560183Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090082.part"}
+{"level":"info","ts":"2024-01-12T20:08:01.56446Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:08:01.564516Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:08:01.710071Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:08:01.73969Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:08:01.740001Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090082"}
+time="2024-01-12T20:08:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:08:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:08:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:08:01Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:08:01: etcd snapshot saved successfully.
+2024-01-12 20:08:01: Syncing backup to remote server...
+2024-01-12 20:08:02: Backup synced successfully to remote server.
+2024-01-12 20:08:02: Backup completed at Fri Jan 12 20:08:02 UTC 2024
+---------------------------------
+ 2024-01-12 20:16:01: Backup started at Fri Jan 12 20:16:01 UTC 2024
+ 2024-01-12 20:16:01: Saving etcd snapshot...
+time="2024-01-12T20:16:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090562"
+{"level":"info","ts":"2024-01-12T20:16:01.600947Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090562.part"}
+{"level":"info","ts":"2024-01-12T20:16:01.604326Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:16:01.604413Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:16:01.751292Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:16:01.788597Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:16:01.788729Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090562"}
+time="2024-01-12T20:16:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:16:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:16:01Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:16:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:16:01Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:16:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:16:01Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:16:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:16:02: etcd snapshot saved successfully.
+2024-01-12 20:16:02: Syncing backup to remote server...
+2024-01-12 20:16:02: Backup synced successfully to remote server.
+2024-01-12 20:16:02: Backup completed at Fri Jan 12 20:16:02 UTC 2024
+---------------------------------
+ 2024-01-12 20:18:01: Backup started at Fri Jan 12 20:18:01 UTC 2024
+ 2024-01-12 20:18:01: Saving etcd snapshot...
+time="2024-01-12T20:18:02Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090682"
+{"level":"info","ts":"2024-01-12T20:18:02.261563Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090682.part"}
+{"level":"info","ts":"2024-01-12T20:18:02.265715Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:18:02.265776Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:18:02.418433Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:18:02.447773Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:18:02.447894Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090682"}
+time="2024-01-12T20:18:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:18:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:18:02Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:18:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:18:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:18:02Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:18:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:18:03Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:18:03: etcd snapshot saved successfully.
+2024-01-12 20:18:03: Syncing backup to remote server...
+2024-01-12 20:18:03: Backup synced successfully to remote server.
+2024-01-12 20:18:03: Backup completed at Fri Jan 12 20:18:03 UTC 2024
+---------------------------------
+ 2024-01-12 20:19:51: Backup started at Fri Jan 12 20:19:51 UTC 2024
+ 2024-01-12 20:19:51: Saving etcd snapshot...
+time="2024-01-12T20:19:51Z" level=fatal msg="etcd database not found in /home/ubuntu/.rancher/k3s/server"
+2024-01-12 20:19:51: etcd snapshot saved successfully.
+2024-01-12 20:19:51: Syncing backup to remote server...
+2024-01-12 20:19:51: Backup synced successfully to remote server.
+2024-01-12 20:19:51: Backup completed at Fri Jan 12 20:19:51 UTC 2024
+---------------------------------
+ 2024-01-12 20:20:01: Backup started at Fri Jan 12 20:20:01 UTC 2024
+ 2024-01-12 20:20:01: Saving etcd snapshot...
+time="2024-01-12T20:20:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090802"
+{"level":"info","ts":"2024-01-12T20:20:01.851649Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090802.part"}
+{"level":"info","ts":"2024-01-12T20:20:01.854547Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:20:01.854654Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:20:01.989697Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:20:02.018014Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:20:02.018176Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090802"}
+time="2024-01-12T20:20:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:20:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:20:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:20:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:20:02: etcd snapshot saved successfully.
+2024-01-12 20:20:02: Syncing backup to remote server...
+2024-01-12 20:20:02: Backup synced successfully to remote server.
+2024-01-12 20:20:02: Backup completed at Fri Jan 12 20:20:02 UTC 2024
+---------------------------------
+ 2024-01-12 20:20:07: Backup started at Fri Jan 12 20:20:07 UTC 2024
+ 2024-01-12 20:20:07: Saving etcd snapshot...
+time="2024-01-12T20:20:08Z" level=fatal msg="etcd database not found in /home/ubuntu/.rancher/k3s/server"
+2024-01-12 20:20:08: etcd snapshot saved successfully.
+2024-01-12 20:20:08: Syncing backup to remote server...
+2024-01-12 20:20:08: Backup synced successfully to remote server.
+2024-01-12 20:20:08: Backup completed at Fri Jan 12 20:20:08 UTC 2024
+---------------------------------
+ 2024-01-12 20:20:27: Backup started at Fri Jan 12 20:20:27 UTC 2024
+ 2024-01-12 20:20:27: Saving etcd snapshot...
+time="2024-01-12T20:20:27Z" level=fatal msg="etcd database not found in /home/ubuntu/.rancher/k3s/server"
+2024-01-12 20:20:27: etcd snapshot saved successfully.
+2024-01-12 20:20:27: Syncing backup to remote server...
+2024-01-12 20:20:28: Backup synced successfully to remote server.
+2024-01-12 20:20:28: Backup completed at Fri Jan 12 20:20:28 UTC 2024
+---------------------------------
+ 2024-01-12 20:20:47: Backup started at Fri Jan 12 20:20:47 UTC 2024
+ 2024-01-12 20:20:47: Saving etcd snapshot...
+time="2024-01-12T20:20:47Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090848"
+{"level":"info","ts":"2024-01-12T20:20:47.808011Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090848.part"}
+{"level":"info","ts":"2024-01-12T20:20:47.811672Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:20:47.811748Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:20:47.9794Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:20:48.007041Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:20:48.00724Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090848"}
+time="2024-01-12T20:20:48Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:20:48Z" level=info msg="Deleting ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090819"
+time="2024-01-12T20:20:48Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089362"
+time="2024-01-12T20:20:48Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089001"
+time="2024-01-12T20:20:48Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:20:48Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088881"
+time="2024-01-12T20:20:48Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090562"
+time="2024-01-12T20:20:48Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090802"
+time="2024-01-12T20:20:49Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:20:49Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089242"
+time="2024-01-12T20:20:50Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089482"
+time="2024-01-12T20:20:50Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089962"
+time="2024-01-12T20:20:50Z" level=info msg="Creating ETCDSnapshotFile for backup.log"
+time="2024-01-12T20:20:51Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089122"
+time="2024-01-12T20:20:51Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089602"
+time="2024-01-12T20:20:52Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089721"
+time="2024-01-12T20:20:52Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089842"
+time="2024-01-12T20:20:52Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090082"
+time="2024-01-12T20:20:53Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090682"
+time="2024-01-12T20:20:53Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:20:54Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:20:54: etcd snapshot saved successfully.
+2024-01-12 20:20:54: Syncing backup to remote server...
+2024-01-12 20:20:54: Backup synced successfully to remote server.
+2024-01-12 20:20:54: Backup completed at Fri Jan 12 20:20:54 UTC 2024
+---------------------------------
+ 2024-01-12 20:21:24: Backup started at Fri Jan 12 20:21:24 UTC 2024
+ 2024-01-12 20:21:24: Saving etcd snapshot...
+time="2024-01-12T20:21:25Z" level=fatal msg="etcd database not found in /home/ubuntu/.rancher/k3s/server"
+2024-01-12 20:21:25: etcd snapshot saved successfully.
+2024-01-12 20:21:25: Syncing backup to remote server...
+2024-01-12 20:21:25: Backup synced successfully to remote server.
+2024-01-12 20:21:25: Backup completed at Fri Jan 12 20:21:25 UTC 2024
+---------------------------------
+ 2024-01-12 20:22:01: Backup started at Fri Jan 12 20:22:01 UTC 2024
+ 2024-01-12 20:22:01: Saving etcd snapshot...
+time="2024-01-12T20:22:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090922"
+{"level":"info","ts":"2024-01-12T20:22:01.70954Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090922.part"}
+{"level":"info","ts":"2024-01-12T20:22:01.71409Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:22:01.714307Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:22:01.833318Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:22:01.860608Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:22:01.860728Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705090922"}
+time="2024-01-12T20:22:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:22:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:22:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:22:01Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:22:01: etcd snapshot saved successfully.
+2024-01-12 20:22:01: Syncing backup to remote server...
+2024-01-12 20:22:02: Backup synced successfully to remote server.
+2024-01-12 20:22:02: Backup completed at Fri Jan 12 20:22:02 UTC 2024
+---------------------------------
+ 2024-01-12 20:24:01: Backup started at Fri Jan 12 20:24:01 UTC 2024
+ 2024-01-12 20:24:01: Saving etcd snapshot...
+time="2024-01-12T20:24:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091042"
+{"level":"info","ts":"2024-01-12T20:24:01.562262Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091042.part"}
+{"level":"info","ts":"2024-01-12T20:24:01.565518Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:24:01.565576Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:24:01.906473Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:24:01.93424Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:24:01.934442Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091042"}
+time="2024-01-12T20:24:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:24:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:24:01Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:24:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:24:01Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:24:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:24:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:24:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:24:02: etcd snapshot saved successfully.
+2024-01-12 20:24:02: Syncing backup to remote server...
+2024-01-12 20:24:03: Backup synced successfully to remote server.
+2024-01-12 20:24:03: Backup completed at Fri Jan 12 20:24:03 UTC 2024
+---------------------------------
+ 2024-01-12 20:26:01: Backup started at Fri Jan 12 20:26:01 UTC 2024
+ 2024-01-12 20:26:01: Saving etcd snapshot...
+time="2024-01-12T20:26:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091161"
+{"level":"info","ts":"2024-01-12T20:26:01.251694Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091161.part"}
+{"level":"info","ts":"2024-01-12T20:26:01.255856Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:26:01.255928Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:26:01.382542Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:26:01.408853Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:26:01.408976Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091161"}
+time="2024-01-12T20:26:01Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:26:01Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:26:01Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:26:01Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:26:01: etcd snapshot saved successfully.
+2024-01-12 20:26:01: Syncing backup to remote server...
+2024-01-12 20:26:01: Backup synced successfully to remote server.
+2024-01-12 20:26:01: Backup completed at Fri Jan 12 20:26:01 UTC 2024
+---------------------------------
+ 2024-01-12 20:28:01: Backup started at Fri Jan 12 20:28:01 UTC 2024
+ 2024-01-12 20:28:01: Saving etcd snapshot...
+time="2024-01-12T20:28:02Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091282"
+{"level":"info","ts":"2024-01-12T20:28:02.039054Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091282.part"}
+{"level":"info","ts":"2024-01-12T20:28:02.042211Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:28:02.042299Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:28:02.372512Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:28:02.403678Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:28:02.403803Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091282"}
+time="2024-01-12T20:28:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:28:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:28:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:28:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:28:02: etcd snapshot saved successfully.
+2024-01-12 20:28:02: Syncing backup to remote server...
+2024-01-12 20:28:02: Backup synced successfully to remote server.
+2024-01-12 20:28:02: Backup completed at Fri Jan 12 20:28:02 UTC 2024
+---------------------------------
+ 2024-01-12 20:30:01: Backup started at Fri Jan 12 20:30:01 UTC 2024
+ 2024-01-12 20:30:01: Saving etcd snapshot...
+time="2024-01-12T20:30:02Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091402"
+{"level":"info","ts":"2024-01-12T20:30:02.338133Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091402.part"}
+{"level":"info","ts":"2024-01-12T20:30:02.342082Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:30:02.342167Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:30:02.552636Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:30:02.593963Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:30:02.594099Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091402"}
+time="2024-01-12T20:30:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:30:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:30:02Z" level=info msg="Deleting ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:30:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:30:02Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T20:30:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:30:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T20:30:03Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:30:03: etcd snapshot saved successfully.
+2024-01-12 20:30:03: Syncing backup to remote server...
+2024-01-12 20:30:03: Backup synced successfully to remote server.
+2024-01-12 20:30:03: Backup completed at Fri Jan 12 20:30:03 UTC 2024
+---------------------------------
+ 2024-01-12 20:32:01: Backup started at Fri Jan 12 20:32:01 UTC 2024
+ 2024-01-12 20:32:01: Saving etcd snapshot...
+time="2024-01-12T20:32:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091522"
+{"level":"info","ts":"2024-01-12T20:32:01.934768Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091522.part"}
+{"level":"info","ts":"2024-01-12T20:32:01.939083Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T20:32:01.939767Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T20:32:02.082182Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T20:32:02.109255Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T20:32:02.109387Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705091522"}
+time="2024-01-12T20:32:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T20:32:02Z" level=info msg="Deleting ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:32:02Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T20:32:02Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 20:32:02: etcd snapshot saved successfully.
+2024-01-12 20:32:02: Syncing backup to remote server...
+2024-01-12 20:32:02: Backup synced successfully to remote server.
+2024-01-12 20:32:02: Backup completed at Fri Jan 12 20:32:02 UTC 2024
+---------------------------------
+ 2024-01-12 21:00:01: Backup started at Fri Jan 12 21:00:01 UTC 2024
+ 2024-01-12 21:00:01: Saving etcd snapshot...
+time="2024-01-12T21:00:01Z" level=info msg="Saving etcd snapshot to /home/ubuntu/backup/on-demand-ip-172-31-21-133-1705093202"
+{"level":"info","ts":"2024-01-12T21:00:01.740022Z","caller":"snapshot/v3_snapshot.go:65","msg":"created temporary db file","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705093202.part"}
+{"level":"info","ts":"2024-01-12T21:00:01.744634Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:212","msg":"opened snapshot stream; downloading"}
+{"level":"info","ts":"2024-01-12T21:00:01.744844Z","caller":"snapshot/v3_snapshot.go:73","msg":"fetching snapshot","endpoint":"https://127.0.0.1:2379"}
+{"level":"info","ts":"2024-01-12T21:00:02.083093Z","logger":"client","caller":"v3@v3.5.9-k3s1/maintenance.go:220","msg":"completed snapshot read; closing"}
+{"level":"info","ts":"2024-01-12T21:00:02.114959Z","caller":"snapshot/v3_snapshot.go:88","msg":"fetched snapshot","endpoint":"https://127.0.0.1:2379","size":"11 MB","took":"now"}
+{"level":"info","ts":"2024-01-12T21:00:02.115172Z","caller":"snapshot/v3_snapshot.go:97","msg":"saved","path":"/home/ubuntu/backup/on-demand-ip-172-31-21-133-1705093202"}
+time="2024-01-12T21:00:02Z" level=info msg="Reconciling ETCDSnapshotFile resources"
+time="2024-01-12T21:00:02Z" level=info msg="Creating ETCDSnapshotFile for backup_log.txt"
+time="2024-01-12T21:00:02Z" level=info msg="Creating ETCDSnapshotFile for postgres_backup.sql"
+time="2024-01-12T21:00:02Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089001"
+time="2024-01-12T21:00:02Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089602"
+time="2024-01-12T21:00:02Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089962"
+time="2024-01-12T21:00:02Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090848"
+time="2024-01-12T21:00:03Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705091522"
+time="2024-01-12T21:00:03Z" level=info msg="Creating ETCDSnapshotFile for backup_script.log"
+time="2024-01-12T21:00:03Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089362"
+time="2024-01-12T21:00:04Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089721"
+time="2024-01-12T21:00:04Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089842"
+time="2024-01-12T21:00:05Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090562"
+time="2024-01-12T21:00:05Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090922"
+time="2024-01-12T21:00:05Z" level=info msg="Creating ETCDSnapshotFile for backup.log"
+time="2024-01-12T21:00:06Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089242"
+time="2024-01-12T21:00:06Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090082"
+time="2024-01-12T21:00:07Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090682"
+time="2024-01-12T21:00:07Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705091042"
+time="2024-01-12T21:00:07Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705091161"
+time="2024-01-12T21:00:08Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705091402"
+time="2024-01-12T21:00:08Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089122"
+time="2024-01-12T21:00:09Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705089482"
+time="2024-01-12T21:00:09Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705090802"
+time="2024-01-12T21:00:09Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705091282"
+time="2024-01-12T21:00:10Z" level=info msg="Creating ETCDSnapshotFile for on-demand-ip-172-31-21-133-1705088881"
+time="2024-01-12T21:00:10Z" level=info msg="Reconciliation of ETCDSnapshotFile resources complete"
+2024-01-12 21:00:10: etcd snapshot saved successfully.
+2024-01-12 21:00:10: Syncing backup to remote server...
+ssh: connect to host 127.0.0.1 port 2222: Connection refused
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(235) [sender=3.1.3]
+2024-01-12 21:00:10: Backup synced successfully to remote server.
+2024-01-12 21:00:10: Backup completed at Fri Jan 12 21:00:10 UTC 2024
