@@ -1,0 +1,59 @@
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: {{ .Release.Name }}-fastapi-service
+#  namespace: {{ .Values.global.namespace }}
+#spec:
+#  selector:
+#    app: {{ .Release.Name }}-fastapi-app-deploy
+#  type: {{ .Values.service.fastapi.type }}
+#  ports:
+#    - protocol: TCP
+#      port: {{ .Values.service.fastapi.port }}
+#      targetPort: {{ .Values.service.fastapi.port }}  
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-fastapi-service
+  namespace: {{ .Values.global.namespace }}
+spec:
+  selector:
+    app: {{ .Release.Name }}-fastapi-service
+  type: {{ .Values.service.fastapi.type }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.fastapi.port }}
+      targetPort: {{ .Values.service.fastapi.port }}
+
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-postgres-service
+  namespace: {{ .Values.global.namespace }}
+spec:
+  selector:
+    app: {{ .Release.Name }}-postgres
+  type: {{ .Values.service.postgres.type }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.postgres.port }}
+      targetPort: {{ .Values.service.postgres.port }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-pgadm-service
+  namespace: {{ .Values.global.namespace }}
+spec:
+  selector:
+    app: {{ .Release.Name }}-pgadmin
+  type: {{ .Values.service.pgadm.type }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.pgadm.port }}
+      targetPort: {{ .Values.service.pgadm.port }}
+      nodePort: {{ .Values.service.pgadm.nodePort }}  # Assuming this is a NodePort service

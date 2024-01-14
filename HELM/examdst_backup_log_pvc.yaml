@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Release.Name }}-backup-log-pvc
+  namespace: {{ .Values.global.namespace }}
+spec:
+  accessModes:
+    - {{ .Values.backupLogPvc.accessMode }}
+  resources:
+    requests:
+      storage: {{ .Values.backupLogPvc.storage }}
+  storageClassName: {{ .Values.backupLogPvc.storageClassName }}

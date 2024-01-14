@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-pgadmin-deployment
+  namespace: {{ .Values.global.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-pgadmin
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-pgadmin
+    spec:
+      containers:
+      - name: pgadmin
+        image: "{{ .Values.pgadmin.image.repository }}:{{ .Values.pgadmin.image.tag }}"
+        ports:
+        - containerPort: {{ .Values.pgadmin.service.port }}
+        env:
+        - name: PGADMIN_DEFAULT_EMAIL
+          value: "{{ .Values.pgadmin.env.email }}"
+        - name: PGADMIN_DEFAULT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-pgadmin-secret
+              key: pgadmin-password

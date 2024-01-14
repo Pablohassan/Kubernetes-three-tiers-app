@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-fastapi-app-deploy
+  namespace: {{ .Values.global.namespace }}
+  labels:
+    app: {{ .Release.Name }}-fastapi-app-deploy
+spec:
+  replicas: {{ .Values.fastapi.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-fastapi-app-deploy
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-fastapi-app-deploy
+    spec:
+      containers:
+      - name: {{ .Release.Name }}
+        image: "{{ .Values.fastapi.image.repository }}:{{ .Values.fastapi.image.tag }}"
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 5000
+        resources:
+          requests:
+            cpu: "100m"

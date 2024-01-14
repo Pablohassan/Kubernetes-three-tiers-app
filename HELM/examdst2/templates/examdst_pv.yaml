@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Release.Name }}-exam1-dst-pv
+spec:
+  capacity:
+    storage: {{ .Values.exam1DstPv.storage }}
+  accessModes:
+    - {{ .Values.exam1DstPv.accessMode }}
+  hostPath:
+    path: {{ .Values.exam1DstPv.hostPath }}
+  storageClassName: {{ .Values.exam1DstPv.storageClassName }}

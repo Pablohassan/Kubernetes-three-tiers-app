@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Release.Name }}-fastapi-ingress
+  namespace: {{ .Values.global.namespace }}
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  rules:
+  - host: {{ .Values.fastapi.ingress.host }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Release.Name }}-fastapi-service
+            port:
+              number: {{ .Values.fastapi.service.port }}
+  tls:
+  - hosts:
+    - {{ .Values.fastapi.ingress.host }}
+    secretName: {{ .Release.Name }}-fastapi-tls

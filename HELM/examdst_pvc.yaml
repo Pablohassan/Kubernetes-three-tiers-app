@@ -1,0 +1,9 @@
+volumeClaimTemplates:
+- metadata:
+    name: {{ .Release.Name }}-exam1-dst-pvc
+  spec:
+    accessModes: [ "ReadWriteOnce" ]
+    storageClassName: "local-path"
+    resources:
+      requests:
+        storage: 3Gi
