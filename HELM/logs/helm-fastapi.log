@@ -1,0 +1,14 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52110 - "GET / HTTP/1.1" 200 OK
+INFO:     10.42.0.48:32978 - "GET / HTTP/1.1" 200 OK
+INFO:     10.42.0.48:55034 - "GET /docs HTTP/1.1" 200 OK
+INFO:     10.42.0.48:55884 - "GET /users HTTP/1.1" 200 OK
+INFO:     10.42.0.48:47148 - "GET /%3A30080 HTTP/1.1" 405 Method Not Allowed
+INFO:     10.42.0.48:38772 - "GET /%3A30080 HTTP/1.1" 405 Method Not Allowed
+INFO:     10.42.0.48:54782 - "GET /%3A30080 HTTP/1.1" 405 Method Not Allowed
+INFO:     10.42.0.48:54792 - "GET /%3A5000 HTTP/1.1" 405 Method Not Allowed
+INFO:     10.42.0.48:36226 - "GET / HTTP/1.1" 200 OK
+INFO:     10.42.0.48:45268 - "GET / HTTP/1.1" 200 OK

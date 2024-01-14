@@ -25,10 +25,10 @@ spec:
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: "{{ .Release.Name }}-postgres-secret"  # Assurez-vous que ce secret est défini ailleurs dans votre chart
+              name: "examdst-chart-postgres-secret"  
               key: postgres-password
         - name: POSTGRES_DB
-          value: "{{ .Values.postgres.env.dbname }}"  # Nom de votre base de données
+          value: "{{ .Values.postgres.env.dbname }}"  
         volumeMounts:
         - mountPath: /var/lib/postgresql/data
           name: postgres-storage

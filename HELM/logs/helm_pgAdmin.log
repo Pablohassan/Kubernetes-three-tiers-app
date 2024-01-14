@@ -1,0 +1,94 @@
+NOTE: Configuring authentication for SERVER mode.
+
+pgAdmin 4 - Application Initialisation
+======================================
+
+postfix/postlog: starting the Postfix mail system
+[2024-01-14 20:24:23 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[2024-01-14 20:24:23 +0000] [1] [INFO] Listening at: http://[::]:80 (1)
+[2024-01-14 20:24:23 +0000] [1] [INFO] Using worker: gthread
+[2024-01-14 20:24:23 +0000] [116] [INFO] Booting worker with pid: 116
+::ffff:10.42.0.1 - - [14/Jan/2024:20:35:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:37:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:40:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:42:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:45:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:47:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:49:55 +0000] "GET /browser/ HTTP/1.1" 302 237 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:49:55 +0000] "GET /login?next=%2Fbrowser%2F HTTP/1.1" 200 2346 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:49:55 +0000] "GET /favicon.ico?ver=80200 HTTP/1.1" 302 245 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:49:55 +0000] "GET /browser/js/endpoints.js?ver=80200 HTTP/1.1" 200 3124 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:49:55 +0000] "GET /tools/translations.js?ver=80200 HTTP/1.1" 200 321 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:50:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:55:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:42 +0000] "GET /tools/translations.js?ver=80200 HTTP/1.1" 200 321 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:42 +0000] "GET /browser/js/endpoints.js?ver=80200 HTTP/1.1" 200 3124 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:50 +0000] "POST /authenticate/login HTTP/1.1" 302 205 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:50 +0000] "GET /browser/ HTTP/1.1" 200 2524 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/login?next=%2Fbrowser%2F" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /browser/browser.css?ver=80200 HTTP/1.1" 200 5350 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /browser/js/endpoints.js?ver=80200 HTTP/1.1" 200 3124 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /browser/js/messages.js?ver=80200 HTTP/1.1" 200 811 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /tools/translations.js?ver=80200 HTTP/1.1" 200 321 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /browser/server/supported_servers.js?ver=80200 HTTP/1.1" 200 290 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /browser/js/utils.js?ver=80200 HTTP/1.1" 200 1907 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /user_management/current_user.js?ver=80200 HTTP/1.1" 200 307 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /browser/check_corrupted_db_file HTTP/1.1" 200 61 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /misc/bgprocess/ HTTP/1.1" 200 2 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /preferences/get_all HTTP/1.1" 200 9402 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:51 +0000] "GET /settings/get_tree_state/ HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:52 +0000] "GET /browser/nodes/ HTTP/1.1" 200 273 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:52 +0000] "POST /browser/master_password HTTP/1.1" 200 174 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:57:52 +0000] "GET /misc/upgrade_check HTTP/1.1" 200 77 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:03 +0000] "POST /settings/store HTTP/1.1" 200 77 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:03 +0000] "GET /browser/server_group/nodes/ HTTP/1.1" 200 242 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:22 +0000] "POST /settings/save_tree_state/ HTTP/1.1" 200 63 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:22 +0000] "GET /settings/get_tree_state/ HTTP/1.1" 200 2 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "POST /browser/server/obj/1/ HTTP/1.1" 200 463 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /browser/server_group/children/1 HTTP/1.1" 200 373 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /dashboard/activity/1 HTTP/1.1" 200 823 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /browser/server_group/nodes/ HTTP/1.1" 200 242 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /dashboard/dashboard_stats/1?chart_names= HTTP/1.1" 200 2 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /dashboard/dashboard_stats/1?chart_names=session_stats,tps_stats,ti_stats,to_stats,bio_stats HTTP/1.1" 200 241 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /browser/server/connect/1/1 HTTP/1.1" 200 288 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:50 +0000] "GET /dashboard/activity/1 HTTP/1.1" 200 823 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:53 +0000] "GET /browser/server/children/1/1 HTTP/1.1" 200 233 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:58:55 +0000] "GET /dashboard/dashboard_stats/1?chart_names=session_stats,tps_stats,ti_stats,to_stats,bio_stats HTTP/1.1" 200 241 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:59:00 +0000] "GET /dashboard/dashboard_stats/1?chart_names=session_stats,tps_stats,ti_stats,to_stats,bio_stats HTTP/1.1" 200 241 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+2024-01-14 20:59:03,862: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/venv/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/lib/python3.11/site-packages/flask/app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/venv/lib/python3.11/site-packages/flask/app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/lib/python3.11/site-packages/flask/ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 655, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+::ffff:10.42.0.1 - - [14/Jan/2024:20:59:03 +0000] "GET /browser/docs HTTP/1.1" 404 207 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:59:03 +0000] "POST /settings/save_tree_state/ HTTP/1.1" 200 63 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:59:03 +0000] "GET /settings/get_tree_state/ HTTP/1.1" 200 127 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:20:59:03 +0000] "GET /favicon.ico HTTP/1.1" 302 245 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/docs" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+2024-01-14 20:59:09,410: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/venv/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/lib/python3.11/site-packages/flask/app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/venv/lib/python3.11/site-packages/flask/app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/lib/python3.11/site-packages/flask/ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 655, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+::ffff:10.42.0.1 - - [14/Jan/2024:20:59:09 +0000] "GET /docs HTTP/1.1" 404 207 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::ffff:10.42.0.1 - - [14/Jan/2024:21:00:57 +0000] "POST /misc/cleanup HTTP/1.1" 200 0 "http://mystreamingapp.crs-datascientest.cloudns.biz:30080/browser/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"

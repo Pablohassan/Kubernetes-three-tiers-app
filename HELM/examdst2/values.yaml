@@ -25,7 +25,7 @@ postgres:
     user: admin
     dbname: storedb
   secret:
-    encodedPassword: "cGFzc3dvcmQ="
+  #encodedPassword: ""
   storage:
     className: local-path
     size: 3Gi
@@ -38,9 +38,8 @@ pgadmin:
     port: 80
     nodePort: 30080
   env:
-    email: "admin@admin.com"
-    password: "root" 
-
+    email: "admin@admin.com" 
+    #encodedPassword:""
 exam1DstPv:
   storage: 10Gi
   accessMode: ReadWriteOnce

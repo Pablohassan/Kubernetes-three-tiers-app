@@ -1,0 +1,10 @@
+2024-01-14 20:49:10.459 UTC [1] LOG:  starting PostgreSQL 12.0 on x86_64-pc-linux-musl, compiled by gcc (Alpine 8.3.0) 8.3.0, 64-bit
+2024-01-14 20:49:10.459 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-01-14 20:49:10.459 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2024-01-14 20:49:10.463 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-01-14 20:49:10.481 UTC [19] LOG:  database system was interrupted; last known up at 2024-01-14 19:21:44 UTC
+2024-01-14 20:49:10.524 UTC [19] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-14 20:49:10.527 UTC [19] LOG:  redo starts at 0/166B540
+2024-01-14 20:49:10.527 UTC [19] LOG:  invalid record length at 0/166B628: wanted 24, got 0
+2024-01-14 20:49:10.527 UTC [19] LOG:  redo done at 0/166B5F0
+2024-01-14 20:49:10.544 UTC [1] LOG:  database system is ready to accept connections
