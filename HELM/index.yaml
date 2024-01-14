@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  examdst2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-14T19:25:17.518630197Z"
+    description: A Helm chart for Kubernetes
+    digest: b86bd9fbdc4245680ebb7fd12a5c1708827df1368a8b3216091a119158659598
+    name: examdst2
+    type: application
+    urls:
+    - https://github.com/fallewi/chart-k8s.git/examdst2-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-14T19:25:17.520828265Z"
+    description: A Helm chart for Kubernetes
+    digest: 1264ddfc373dd03fd67ee9d38ff954e6d003314db8605567ccdc11ef5dc82849
+    name: examdst2
+    type: application
+    urls:
+    - https://github.com/fallewi/chart-k8s.git/examdst2/examdst2-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-01-14T19:25:17.517447152Z"
