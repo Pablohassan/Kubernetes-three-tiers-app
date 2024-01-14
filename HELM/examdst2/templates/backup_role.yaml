@@ -1,9 +1,0 @@
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  namespace: {{ .Values.global.namespace }}
-  name: {{ .Release.Name }}-backup-role
-rules:
-- apiGroups: [""]
-  resources: ["pods", "pods/log", "pods/exec", "secrets"]
-  verbs: ["get", "list", "watch", "create", "delete"]

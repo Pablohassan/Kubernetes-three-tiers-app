@@ -1,22 +1,19 @@
 global:
   namespace: helm
+
 service:
-  fastapi-app-deploy:
-    port: 80
-    containerPort: 5000
-    type: ClusterIP
-    targetPort: 5000
-  fastapi:
-    targetPort: 5000
-    port: 80  # Port pour FastAPI
-    type: ClusterIP  # Type de service pour FastAPI
   postgres:
     port: 5432  # Port pour PostgreSQL
     type: ClusterIP  # Type de service pour PostgreSQL
+  fastapiAppDeploy:
+    port: 5000
+    containerPort: 5000
+    type: ClusterIP 
   pgadm:
     port: 80  # Port pour PgAdmin
     type: NodePort  # Type de service pour PgAdmin
     nodePort: 30080  # NodePort pour PgAdmin, si nécessaire
+
 postgres:
   replicaCount: 1
   image:
@@ -32,6 +29,7 @@ postgres:
   storage:
     className: local-path
     size: 3Gi
+
 pgadmin:
   image:
     repository: dpage/pgadmin4  # Remplacer par le dépôt d'image si nécessaire
@@ -41,36 +39,31 @@ pgadmin:
     nodePort: 30080
   env:
     email: "admin@admin.com"
-    password: "root"  # Ne pas mettre le mot de passe directement dans values.yaml pour des raisons de sécurité
+    password: "root" 
+
 exam1DstPv:
   storage: 10Gi
   accessMode: ReadWriteOnce
   hostPath: "/mnt/data"
   storageClassName: slow
-exam1DstPvc:
-  accessMode: ReadWriteOnce
-  storageClassName: local-path
-  storage: 3Gi
-backupLogPvc:
-  accessMode: ReadWriteOnce
-  storageClassName: slow
-  storage: 1Gi
+
 fastapi:
-  service:
-    port: 80  # Assurez-vous que cela correspond au port du service FastAPI
-    containerPort: 5000
-    targetPort: 5000
-    type: ClusterIP
+  replicaCount: 3
   ingress:
     host: mystreamingapp.crs-datascientest.cloudns.biz  # Votre nom de domaine
-  replicaCount: 3  # Replica count specific to FastAPI, if different from global
   image:
-    repository: pablohassan/fast_api_exam_app  # Replace with your FastAPI image repository
-    tag: "helmv1"  # Replace with the desired FastAPI image tag
+    repository: pablohassan/fast_api_exam_app
+    tag: helmv1
+  containerPort: 5000
+  port: 80
   hpa:
     minReplicas: 3
     maxReplicas: 6
     targetCPUUtilizationPercentage: 70
+  resources:
+    requests:
+      cpu: "100m"
+
 clusterIssuer:
   name: letsencrypt-prod
   acme:

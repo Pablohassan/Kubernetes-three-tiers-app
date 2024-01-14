@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Release.Name }}-fastapi-app-deploy
-  namespace: {{ .Values.global.namespace }}
   labels:
     app: {{ .Release.Name }}-fastapi-app-deploy
 spec:
@@ -11,18 +10,18 @@ spec:
     matchLabels:
       app: {{ .Release.Name }}-fastapi-app-deploy
   strategy:
-    type: RollingUpdate
+    type: RollingUpdate 
   template:
     metadata:
       labels:
         app: {{ .Release.Name }}-fastapi-app-deploy
     spec:
       containers:
-      - name: {{ .Release.Name }}
+      - name: fast-api-exam-app
         image: "{{ .Values.fastapi.image.repository }}:{{ .Values.fastapi.image.tag }}"
         imagePullPolicy: Always
         ports:
-          - containerPort: 5000
+        - containerPort: {{ .Values.fastapi.containerPort }}
         resources:
           requests:
-            cpu: "100m"
+            cpu: "{{ .Values.fastapi.resources.requests.cpu }}"

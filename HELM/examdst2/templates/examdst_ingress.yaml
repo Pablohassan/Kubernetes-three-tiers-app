@@ -16,7 +16,7 @@ spec:
           service:
             name: {{ .Release.Name }}-fastapi-service
             port:
-              number: {{ .Values.fastapi.service.port }}
+              number: {{ .Values.fastapi.port }}
   tls:
   - hosts:
     - {{ .Values.fastapi.ingress.host }}

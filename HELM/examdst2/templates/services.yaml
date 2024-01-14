@@ -1,18 +1,3 @@
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: {{ .Release.Name }}-fastapi-service
-  namespace: {{ .Values.global.namespace }}
-spec:
-  selector:
-    app: {{ .Release.Name }}-fastapi-app-deploy
-  type: {{ .Values.service.fastapi.type }}
-  ports:
-    - protocol: TCP
-      port: {{ .Values.service.fastapi.port }}
-      targetPort: {{ .Values.service.fastapi.port }}
----
 apiVersion: v1
 kind: Service
 metadata:
@@ -30,7 +15,22 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-metadata: 
+metadata:
+  name: {{ .Release.Name }}-fastapi-service
+  namespace: {{ .Values.global.namespace }}
+spec:
+  selector:
+    app: {{ .Release.Name }}-fastapi-app-deploy
+  type: {{ .Values.service.fastapiAppDeploy.type }}
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: {{ .Values.service.fastapiAppDeploy.port }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
   name: {{ .Release.Name }}-pgadm-service
   namespace: {{ .Values.global.namespace }}
 spec:
@@ -41,5 +41,4 @@ spec:
     - protocol: TCP
       port: {{ .Values.service.pgadm.port }}
       targetPort: {{ .Values.service.pgadm.port }}
-      nodePort: {{ .Values.service.pgadm.nodePort }}  # Assuming this is a NodePort service
-
+      nodePort: {{ .Values.service.pgadm.nodePort }}
